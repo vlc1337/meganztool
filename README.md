@@ -7,3 +7,4 @@ CHANGELOG:
 - fixed some bugs
 - soft will not crash after an error
 - added accounts checker
+- changed design
