@@ -4,8 +4,6 @@ from mega import Mega
 from colorama import Fore, Style, init
 colorama.init(autoreset=True)
 
-#pIsbrIQ8hkF9Y3Wly@xitroo.de:WPxvFNKj
-
 cls = lambda: os.system('cls') if os.name == 'nt' else os.system('clear')
 mega = Mega()
 
