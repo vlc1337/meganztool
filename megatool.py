@@ -17,7 +17,7 @@ logo = f'''
  {Fore.LIGHTGREEN_EX}   █    █    █    ▌  █     █ █  ▄▀   █    █   █    █              █      ▀▄    ▄▀ ▀▄    ▄▀     █       
  {Fore.YELLOW} ▄▀   ▄▀    ▄▀▄▄▄▄   ▐▀▄▄▄▄▀ ▐ █   ▄▀ ▄ ▄▀   █      ▀▄▄▄▄▀      ▄▀         ▀▀▀▀     ▀▀▀▀     ▄▀▄▄▄▄▄▄▀ 
  {Fore.LIGHTRED_EX} █    █     █    ▐   ▐         ▐   ▐    █    ▐          ▐      █                             █        
-{Fore.RED} ▐    ▐     ▐                           ▐                      ▐                             ▐         
+ {Fore.RED} ▐    ▐     ▐                           ▐                      ▐                             ▐         
 
                             {Fore.WHITE} >>> https://github.com/vlc1337 <<<
                             
@@ -121,10 +121,10 @@ def checker():
                 output = open('validmega.txt', 'a', encoding='utf-8')
                 output.write(account + '\n')
                 output.close()
-                valid =+ 1
+                valid += 1
             except:
                 print(f"{Fore.RED}[INVALID] {account}")
-                invalid =+ 1
+                invalid += 1
         print(f'''
 Check finished.
 Valid accounts: {Fore.LIGHTGREEN_EX}{valid}{Fore.RESET}
