@@ -9,10 +9,8 @@ CHANGELOG:
 - added accounts checker
 - changed design
 
-04.08.2022 v 0.4
+04.08.2022 v 0.3
 - fixed some bugs
 - removed account info(because it's useless)
 - added mass upload
 - added timer to mass upload and checker
-
-planning to add mass file grabber :D
