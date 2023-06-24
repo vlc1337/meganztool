@@ -14,3 +14,6 @@ CHANGELOG:
 - removed account info(because it's useless)
 - added mass upload
 - added timer to mass upload and checker
+
+24.06.2023 v 0.4
+- fixed checker
