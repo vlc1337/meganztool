@@ -16,4 +16,4 @@ CHANGELOG:
 - added timer to mass upload and checker
 
 24.06.2023 v 0.4
-- fixed checker
+- trying to fix checker
