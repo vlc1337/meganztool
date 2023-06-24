@@ -5,6 +5,8 @@ from mega import Mega
 from colorama import Fore, Style, init
 import traceback
 from datetime import datetime
+from selenium import webdriver
+driver = webdriver.Chrome()
 
 colorama.init(autoreset=True)
 
